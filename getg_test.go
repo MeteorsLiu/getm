@@ -7,7 +7,7 @@ import (
 )
 
 func TestGetM(t *testing.T) {
-	t.Log(GetM(), MID(), GOID(), GetG(), mOffset, mIDOffset)
+	t.Log(GetM(), MID(), GetG(), mOffset, mIDOffset)
 	var wg sync.WaitGroup
 	wg.Add(5)
 	for i := 0; i < 5; i++ {
@@ -17,7 +17,7 @@ func TestGetM(t *testing.T) {
 			time.Sleep(5 * time.Second)
 		}()
 	}
-	t.Log(GetM(), MID(), GOID(), GetG(), mOffset, mIDOffset)
+	t.Log(GetM(), MID(), GetG(), mOffset, mIDOffset)
 	wg.Wait()
-	t.Log(GetM(), MID(), GOID(), GetG(), mOffset, mIDOffset)
+	t.Log(GetM(), MID(), GetG(), mOffset, mIDOffset)
 }
