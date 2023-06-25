@@ -20,4 +20,5 @@ func TestGetM(t *testing.T) {
 	t.Log(GetM(), MID(), GetG(), mOffset, mIDOffset)
 	wg.Wait()
 	t.Log(GetM(), MID(), GetG(), mOffset, mIDOffset)
+	t.Log(CustomInG[uint64]("goid"))
 }
