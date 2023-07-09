@@ -23,4 +23,7 @@ func TestGetM(t *testing.T) {
 	t.Log(CustomInG[uint64]("goid"))
 	SetCustomInG[uint64]("goid", 123456)
 	t.Log(CustomInG[uint64]("goid"))
+	t.Log(CustomInP[int32]("id"))
+	SetCustomInP[int32]("id", 1)
+	t.Log(CustomInP[int32]("id"))
 }

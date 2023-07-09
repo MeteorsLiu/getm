@@ -38,7 +38,7 @@ CustomInM[int64]("id")
 
 ## Set/Modify a value in M struct.
 ```
-SetCustomInG[int64]("id", 123456)
+SetCustomInM[int64]("id", 123456)
 ```
 Check wthether it's affected or not
 
@@ -46,4 +46,23 @@ Check wthether it's affected or not
 ```
 CustomInM[int64]("id")
 ```
+
+
+## Get a value in P struct.
+```
+CustomInM[int32]("id")
+```
+
+
+## Set/Modify a value in P struct.
+```
+SetCustomInP[int32]("id", 1)
+```
+Check wthether it's affected or not
+
+
+```
+CustomInP[int32]("id")
+```
+
 
