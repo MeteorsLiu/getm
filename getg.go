@@ -53,3 +53,15 @@ func CustomInM[T any](fieldName string) T {
 	customOffset := mType.FieldByName(fieldName).Offset()
 	return *(*T)(unsafe.Pointer(GetM() + customOffset))
 }
+
+// use at your own risks.
+func SetCustomInG[T any](fieldName string, value T) {
+	customOffset := gType.FieldByName(fieldName).Offset()
+	*(*T)(unsafe.Pointer(GetG() + customOffset)) = value
+}
+
+// use at your own risks.
+func SetCustomInM[T any](fieldName string, value T) {
+	customOffset := mType.FieldByName(fieldName).Offset()
+	*(*T)(unsafe.Pointer(GetM() + customOffset)) = value
+}
