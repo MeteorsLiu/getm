@@ -7,6 +7,7 @@ this will cause your programe unstable.
 # Example(如何使用)
 
 **请确保你的类型与结构体名是存在的，否则会panic**
+
 **Please make sure the type of value is correct, or it will panic**
 
 ## Get a value in G struct.
